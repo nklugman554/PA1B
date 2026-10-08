@@ -1,0 +1,71 @@
+-------------------------------------------------------------------------------
+Test set: ShellTest$BasicTests
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.755 s <<< FAILURE! -- in ShellTest$BasicTests
+ShellTest$BasicTests.testCommandAfterError -- Time elapsed: 0.593 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+expected: <x: command not found
+> but was: <hello ..... 
+/Users/noahk/Desktop/cosi131a/AUnix-ishShell-PA1B/shell
+x: command not found
+hello ..... 
+/Users/noahk/Desktop/cosi131a/AUnix-ishShell-PA1B/shell
+>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+	at ShellTest$BasicTests.testCommandAfterError(ShellTest.java:180)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:330)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1527)
+
+ShellTest$BasicTests.testInvalidCommand -- Time elapsed: 0.049 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+expected: <x: command not found
+> but was: <hello ..... 
+/Users/noahk/Desktop/cosi131a/AUnix-ishShell-PA1B/shell
+x: command not found
+>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+	at ShellTest$BasicTests.testInvalidCommand(ShellTest.java:167)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:330)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1527)
+
+ShellTest$BasicTests.testCommands -- Time elapsed: 0.107 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+expected: <> pom.xml
+src
+target
+test-resources
+>        6        5       23 ../test-resources/file-1.txt
+> > but was: <> hello ..... 
+/Users/noahk/Desktop/cosi131a/AUnix-ishShell-PA1B/shell
+> hello ..... 
+/Users/noahk/Desktop/cosi131a/AUnix-ishShell-PA1B/shell
+> >
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+	at ShellTest$BasicTests.testCommands(ShellTest.java:160)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:330)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1527)
+
